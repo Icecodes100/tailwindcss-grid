@@ -546,14 +546,6 @@ video {
   align-items: center;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
 }
@@ -586,6 +578,11 @@ video {
   border-style: solid;
 }
 
+.border-moderateViolet {
+  --tw-border-opacity: 1;
+  border-color: hsl(263 55% 52% / var(--tw-border-opacity));
+}
+
 .border-moderateVioletLight {
   border-color: hsla(263, 35%, 69%, 0.39);
 }
@@ -595,19 +592,14 @@ video {
   border-color: hsl(217 19% 35% / var(--tw-border-opacity));
 }
 
-.border-moderateViolet {
-  --tw-border-opacity: 1;
-  border-color: hsl(263 55% 52% / var(--tw-border-opacity));
-}
-
 .bg-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(223 223 223 / var(--tw-bg-opacity));
 }
 
-.bg-moderateViolet {
+.bg-veryDarkBlackishBlue {
   --tw-bg-opacity: 1;
-  background-color: hsl(263 55% 52% / var(--tw-bg-opacity));
+  background-color: hsl(219 29% 14% / var(--tw-bg-opacity));
 }
 
 .bg-veryDarkGrayishBlue {
@@ -620,28 +612,18 @@ video {
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
-.bg-veryDarkBlackishBlue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(219 29% 14% / var(--tw-bg-opacity));
-}
-
 .p-6 {
   padding: 1.5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .text-2xl {
@@ -671,10 +653,6 @@ video {
   opacity: 0.75;
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .opacity-90 {
   opacity: 0.9;
 }
@@ -695,11 +673,12 @@ p{
   font-size: 0.8125rem;
 }
 
-@media (min-width: 768px) {
-  .md\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
+#item{
+  background: url('../images/bg-pattern-quotation.svg') right 15% top no-repeat, hsl(263, 55%, 52%);
+  background-size: 120px;
+}
 
+@media (min-width: 768px) {
   .md\:col-start-1 {
     grid-column-start: 1;
   }
@@ -712,12 +691,12 @@ p{
     grid-column-start: 4;
   }
 
-  .md\:col-end-3 {
-    grid-column-end: 3;
-  }
-
   .md\:col-end-2 {
     grid-column-end: 2;
+  }
+
+  .md\:col-end-3 {
+    grid-column-end: 3;
   }
 
   .md\:col-end-4 {
@@ -736,11 +715,8 @@ p{
     grid-row-end: 3;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+

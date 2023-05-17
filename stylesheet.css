@@ -13,3 +13,9 @@ h1.text-2xl{
 p{
   font-size: 0.8125rem;
 }
+
+#item{
+  background: url('../images/bg-pattern-quotation.svg') right 15% top no-repeat, hsl(263, 55%, 52%);
+  background-size: 120px;
+}
+
